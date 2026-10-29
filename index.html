@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5425a8">
+  <meta name="description" content="EitaFeed: testes, memes, listas e cultura pop com humor brasileiro.">
+  <title>EitaFeed — a internet do jeitinho brasileiro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline">A dose diária de internet que faltava na sua vida ✦</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="EitaFeed página inicial"><span class="brand-icon">!</span><span>Eita<span class="brand-light">Feed</span></span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#testes">Testes</a><a href="#famosos">Famosos</a><a href="#memes">Memes</a><a href="#listas">Listas</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menu móvel">
+    <a href="#testes">Testes</a><a href="#famosos">Famosos</a><a href="#memes">Memes</a><a href="#listas">Listas</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> ENTRE, A INTERNET É SUA</span>
+        <h1>O Brasil não é para amadores.<br><span>A internet também não.</span></h1>
+        <p>Testes duvidosos, listas necessárias e cultura pop explicada por quem também está tentando entender tudo.</p>
+        <a class="button button-yellow" href="#testes">Fazer um teste <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="avatar-stack"><i>😎</i><i>🤡</i><i>🫠</i></span><span>Feito para quem abre uma aba e esquece por quê.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração decorativa">
+        <div class="sunburst"></div>
+        <div class="sticker sticker-top">EITA! <span>✦</span></div>
+        <div class="phone">
+          <div class="phone-speaker"></div>
+          <div class="phone-screen">
+            <span class="screen-label">TESTE DO DIA</span>
+            <div class="screen-crown">👑</div>
+            <strong>VOCÊ SE AUTODECLARA PRESIDENTE DO QUÊ?</strong>
+            <span class="screen-button">DESCOBRIR MEU CARGO →</span>
+          </div>
+        </div>
+        <div class="sticker sticker-bottom">SEM CONDIÇÕES <span>♡</span></div>
+        <div class="spark spark-one">✳</div><div class="spark spark-two">✦</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Temas do site"><div>QUIZZES <span>✳</span> FAMOSOS <span>✳</span> MEMES <span>✳</span> LISTAS <span>✳</span> CULTURA POP <span>✳</span> QUIZZES <span>✳</span> FAMOSOS <span>✳</span> MEMES <span>✳</span></div></section>
+
+    <section class="section quiz-feature" id="testes">
+      <div class="section-heading">
+        <div><span class="eyebrow purple">✦ TESTE EM DESTAQUE</span><h2>Descubra seu cargo <em>importantíssimo</em></h2></div>
+        <span class="section-count">01 / TESTE DO DIA</span>
+      </div>
+      <div class="feature-card">
+        <div class="feature-art">
+          <div class="crown">♛</div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <span class="art-caption">PODER? TEMOS.</span><span class="art-number">#01</span>
+        </div>
+        <div class="feature-content">
+          <div class="tag-row"><span class="tag tag-pink">PERSONALIDADE</span><span class="tag tag-orange">5 MIN</span></div>
+          <h3>Você se autodeclara presidente do quê?</h3>
+          <p>O país precisa de liderança. Você precisa de um hobby. Descubra qual ministério completamente desnecessário combina com sua energia.</p>
+          <ul class="feature-points"><li>✨ 7 perguntas de alta relevância duvidosa</li><li>🎯 Resultado feito para compartilhar</li><li>🫡 Zero experiência política exigida</li></ul>
+          <button class="button button-purple" id="startQuiz">Quero descobrir meu cargo <span aria-hidden="true">→</span></button>
+          <p class="microcopy">É brincadeira, viu? Não vale como pesquisa eleitoral.</p>
+        </div>
+      </div>
+      <div class="quiz-panel hidden" id="quizPanel" aria-live="polite">
+        <div class="quiz-top"><span class="eyebrow purple">ELEIÇÃO DO CAOS</span><button class="text-button" id="closeQuiz">Fechar ×</button></div>
+        <div class="progress-meta"><span id="questionCounter">PERGUNTA 1 DE 7</span><span id="progressPercent">14%</span></div>
+        <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+        <div id="quizContent"></div>
+        <div class="quiz-footer"><button class="text-button" id="backQuestion" disabled>← Voltar</button><span>Escolha com sabedoria (ou não).</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="famosos">
+      <div class="section-heading"><div><span class="eyebrow orange">✦ ESTÁ TODO MUNDO FALANDO</span><h2>Na boca do povo</h2></div><a class="view-all" href="#listas">Ver mais <span>↗</span></a></div>
+      <div class="story-grid">
+        <article class="story-card story-lilac"><div class="story-emoji">🎤</div><span class="tag">CULTURA POP</span><h3>O evento que virou assunto antes mesmo de começar</h3><p>Porque na internet o esquenta já é o evento principal.</p><span class="card-meta">4 min de leitura</span></article>
+        <article class="story-card story-peach"><div class="story-emoji">📸</div><span class="tag">FAMOSOS</span><h3>Manual de sobrevivência para acompanhar um tapete vermelho</h3><p>Look, close, meme e opinião não solicitada: temos tudo.</p><span class="card-meta">6 min de leitura</span></article>
+        <article class="story-card story-mint"><div class="story-emoji">👀</div><span class="tag">INTERNET</span><h3>5 momentos em que a timeline perdeu completamente a linha</h3><p>Contexto? Talvez. Comentários? Muitos.</p><span class="card-meta">5 min de leitura</span></article>
+      </div>
+      <p class="editorial-note">Os cartões acima são chamadas editoriais de demonstração. Substitua por matérias originais e verificadas antes de publicar.</p>
+    </section>
+
+    <section class="section split-section" id="memes">
+      <div class="split-copy"><span class="eyebrow pink">✦ HUMOR PARA AGUENTAR</span><h2>Memes são a nossa <em>língua oficial.</em></h2><p>Uma seleção de situações tão brasileiras que nem precisam de legenda. Porque rir é grátis e terapia, infelizmente, nem sempre.</p><a class="button button-dark" href="#listas">Ver listas engraçadas <span>→</span></a></div>
+      <div class="meme-board"><div class="meme-card meme-one"><span>EU: VOU DORMIR CEDO</span><strong>03:17</strong><span>EU, PESQUISANDO SE CAPIVARAS TÊM MELHORES AMIGOS</span></div><div class="meme-card meme-two"><span>MINHA ÚLTIMA CÉLULA CEREBRAL</span><strong>🛒🧠</strong><span>LEMBRANDO DE UMA VERGONHA DE 2014</span></div><div class="meme-stamp">BRASIL<br>CORE™</div></div>
+    </section>
+
+    <section class="section" id="listas">
+      <div class="section-heading"><div><span class="eyebrow green">✦ LISTAS MUITO NECESSÁRIAS</span><h2>Organizando o caos</h2></div><span class="section-count">SALVE PARA DEPOIS</span></div>
+      <div class="list-grid">
+        <a class="list-item" href="#testes"><span class="list-icon">🫠</span><span><small>VIDA ADULTA</small><strong>7 sinais de que você está precisando de um feriado do feriado</strong></span><span class="arrow">↗</span></a>
+        <a class="list-item" href="#testes"><span class="list-icon">💬</span><span><small>AMIZADES</small><strong>Frases que só fazem sentido dentro do seu grupo de amigos</strong></span><span class="arrow">↗</span></a>
+        <a class="list-item" href="#testes"><span class="list-icon">🍿</span><span><small>CULTURA POP</small><strong>Tipos de pessoa que existem em toda sessão de cinema</strong></span><span class="arrow">↗</span></a>
+        <a class="list-item" href="#testes"><span class="list-icon">📱</span><span><small>INTERNET</small><strong>Pequenas coisas que viram um evento na nossa cabeça</strong></span><span class="arrow">↗</span></a>
+      </div>
+      <p class="editorial-note">As chamadas desta primeira versão são exemplos de pauta, não reportagens publicadas.</p>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-icon">✉</div><div><span class="eyebrow">SEM SPAM, SÓ EITA</span><h2>Receba a dose de caos.</h2><p>Uma newsletter divertida pode morar aqui no futuro.</p></div><form id="newsletterForm"><label class="sr-only" for="emailInput">Seu e-mail</label><input id="emailInput" type="email" placeholder="seuemail@exemplo.com" required><button class="button button-yellow" type="submit">Quero receber ↗</button><p class="form-message" id="formMessage">Demonstração visual: ainda não coleta nem envia e-mails.</p></form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#"><span class="brand-icon">!</span><span>Eita<span class="brand-light">Feed</span></span></a>
+    <p>A internet brasileira, com uma pitada extra de “eita”.</p>
+    <div class="footer-links"><a href="#testes">Testes</a><a href="#famosos">Famosos</a><a href="#memes">Memes</a><a href="#listas">Listas</a></div>
+    <small>© <span id="year"></span> EitaFeed — projeto independente em versão inicial.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
